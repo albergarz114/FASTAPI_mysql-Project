@@ -20,3 +20,18 @@ class Beer(Base):
     style = Column(String(50))
     alcohol = Column(Float)
     cereal = Column(String(100))
+
+class Tea(Base):
+    __tablename__ = 'teas'
+
+    id = Column(Integer, primary_key=True, index=True)
+    style = Column(String(50))
+    healthy = Column(Boolean)
+
+
+class Product(Base):
+    __tablename__ = 'products'
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(50))
+    price = Column(Float)
